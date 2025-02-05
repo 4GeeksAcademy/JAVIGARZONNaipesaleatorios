@@ -6,20 +6,25 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 const ObjetoCarta = [
-
-  {palo: 'spade', max: 12},
-  {palo: 'club', max: 12},
-  {palo: 'heart', max: 12}, 
-  {palo: 'diamond', max: 12},
+let numeroNaipe = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+  let palo =  ['spade', 'club', 'heart','diamond'];
 ]
 function tirarCarta() {
-const tirada = math.floor(math.random()*ObjetoCarta.length);
-const resultado =ObjetoCarta[tirada]
+  //*Elegir el palo de la baraja
+const cartaTirada = math.floor(math.random()*ObjetoCarta[numeroNaipe].length);
+const resultado =ObjetoCarta[palo]
 console.log(resultado)
+//* Elegir número de carta
+const paloCarta = math.floor(math.random()*resultado.max + 1);
+
+return (resultado)
+
+return (paloCarta)
+
 }
 
+tirarCarta ()
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+
+
+
