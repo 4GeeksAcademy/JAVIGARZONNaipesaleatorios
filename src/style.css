@@ -5,43 +5,112 @@ body{
 }
 .naipe 
 {
-
-    width: 100px;
-    height: 30px;
+    width: 300px;
+    height: 440px;
     margin: 40px;
     display: flex;
     align-items: center;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+    position: relative;
     justify-content: flex-start;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 10px;
     transition: all 0,5s ;
 }
-.numero{
-    
-    font: 150px/440px Arial, serif;
-    text-align: center;
-
+a.button {
+  display: block;
+  width: 300px;
+  height: 50px;
+  background: SandyBrown;
+  font-family: Arial;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  color: #444;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+a.button:hover {
+  background: #f7bf90;
 }
 
-.carta {
-    width: 300px;
-    height: 440px;
-    border-radius: 15px;
-    background: white;
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
-    position: relative;
+.palo-hearts:before {
+    content: "♥";
+    font-size: 90px;
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    color: red;
   }
-.spade{
-content: "♠";
-} 
-.club{
-content: "♣";
-
-} 
-.heart{
-content: "♥";
-} 
-.diamond {
-content: "♦";
-
-}
+  
+  .palo-hearts:after {
+    content: "♥";
+    font-size: 90px;
+    position: absolute;
+    bottom: 8px;
+    right: 20px;
+    color: red;
+    transform: rotate(180deg);
+  }
+  
+  .palo-diamonds:before {
+    content: "♦";
+    font-size: 90px;
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    color: red;
+  }
+  
+  .palo-diamonds:after {
+    content: "♦";
+    font-size: 90px;
+    position: absolute;
+    bottom: 8px;
+    right: 20px;
+    color: red;
+    transform: rotate(180deg);
+  }
+  
+  .palo-spades:before {
+    content: "♠";
+    font-size: 90px;
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    color: black;
+  }
+  
+  .palo-spades:after {
+    content: "♠";
+    font-size: 90px;
+    position: absolute;
+    bottom: 8px;
+    right: 20px;
+    color: black;
+    transform: rotate(180deg);
+  }
+  
+  .palo-clubs:before {
+    content: "♣";
+    font-size: 90px;
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    color: black;
+  }
+  
+  .palo-clubs:after {
+    content: "♣";
+    font-size: 90px;
+    position: absolute;
+    bottom: 8px;
+    right: 20px;
+    color: black;
+    transform: rotate(180deg);
+  }
