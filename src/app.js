@@ -1,30 +1,30 @@
 import "bootstrap";
 import "./style.css";
 
-
-
-
 const numeroNaipe =  ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 const palo = ["Diamonds", "Spades", "Hearts", "Clubs"];
 
-
 function tirarCarta() {
-  //*Elegir el palo de la baraja
-const cartaTirada = math.floor(math.random()*numeroNaipe.length);
-//* Elegir número de carta
-const paloCarta = math.floor(math.random()*palo.length);
+  //* Elegir número de carta
+  const cartaTirada = Math.floor(Math.random() * numeroNaipe.length);
+  //* Elegir el palo de la baraja
+  const paloCarta = Math.floor(Math.random() * palo.length);
 
-return (paloCarta)
-return (cartaTirada)
-
+  // Devolver ambos valores como un objeto
+  return {
+    numero: numeroNaipe[cartaTirada],
+    palo: palo[paloCarta]
+  };
 }
-tirarCarta()
 
-document.getElementById('numeroCarta').innerHTML = numeroNaipe[cartaTirada];
+// Llamar a la función y obtener los resultados
+const carta = tirarCarta();
+
+// Actualizar el DOM con los valores obtenidos
+document.getElementById('numeroCarta').innerHTML = carta.numero;
 document.getElementById('Carta').className = "";
 document.getElementById('Carta').classList.add("naipe");
-document.getElementById('Carta').classList.add ("paloCarta");
-
+document.getElementById('Carta').classList.add(carta.palo);
 
   
 

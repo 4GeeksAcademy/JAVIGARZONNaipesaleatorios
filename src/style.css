@@ -22,40 +22,40 @@ body{
 }
  
 
-.palo-hearts {
+.Hearts {
     content: "♥";
-    font-size: 90px;
-    position: absolute;
+    font-size: 190px;
+    position: center;
     top: 8px;
-    left: 20px;
+    left: 120px;
     color: red;
   }
   
   
-  .palo-diamonds {
+  .Diamonds {
     content: "♦";
-    font-size: 90px;
-    position: absolute;
+    font-size: 190px;
+    position: center;
     top: 8px;
-    left: 20px;
+    left: 120px;
     color: red;
   }
   
-  .palo-spades {
+  .Spades {
     content: "♠";
-    font-size: 90px;
-    position: absolute;
+    font-size: 190px;
+    position: center;
     top: 8px;
-    left: 20px;
+    left: 120px;
     color: black;
   }
   
-  .palo-clubs {
+  .Clubs {
     content: "♣";
-    font-size: 90px;
-    position: absolute;
+    font-size: 190px;
+    position: center;
     top: 8px;
-    left: 20px;
+    left: 120px;
     color: black;
   }
   
